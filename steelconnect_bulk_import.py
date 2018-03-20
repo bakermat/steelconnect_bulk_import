@@ -151,10 +151,9 @@ def prep_payload(site_id, wan_id, wan_ip, wan_gw):
     payload = json.dumps({
         'site': site_id,
         'wan': wan_id,
-        'bgp_learned_routes_ver2': '[]',  # required for API call to go through
         'type': type,
         'static_ip_v4': static_ip_v4,
-        'static_gw_v4': static_gw_v4,
+        'static_gw_v4': static_gw_v4
     })
     return payload
 
